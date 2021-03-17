@@ -1,0 +1,107 @@
+.portfolio{
+    
+    .filter-btn{
+        margin-top: 50px;
+        .port-btn{
+            background: $secondary;
+            color: $white;
+            padding: 5px 20px;
+        }
+        .is-active{
+            background: $main-color;
+        }
+    }
+    .list{
+        .list-item{
+            float: left;
+            width: 100%;
+            margin-bottom: 20px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            img{
+                width: 100%;
+                
+            }
+            &:after{
+                content: "";
+                display: block;
+                width: calc(100% - 30px);
+                height: 100%;
+                position: absolute;
+                top: 0;
+                opacity: 0;
+                border-radius: 50%;
+                transform: scale(.5);
+                background: $main-color;
+                transition: all .4s ease;
+            }
+            &:hover{
+                &:after{
+                    opacity: .8;
+                border-radius: 0;
+                transform: scale(1);
+                }
+            }
+        }
+    }
+}
+
+
+
+.web-agency{
+    
+    .agency-video{
+        
+        video{
+            width: 100%;
+        }
+    }
+}
+
+
+
+.review{
+    padding-top: 150px;
+    .center{
+        .slick-slide{
+            div{
+                background: $main-color;
+                color: $white;
+                margin: 10px;
+                text-align: center;
+                padding-bottom: 20px;
+                border-radius: 10px;
+                
+            }
+        }
+       
+        .slick-next{
+            position:absolute;
+            right: 1px;
+            
+        }
+        .slick-prev{
+           position: absolute;
+           left: -20px!important;
+           z-index: 1002;
+           
+        }
+        .slick-next:before{
+            color: $secondary;
+            position: absolute;
+            
+        }
+        .slick-prev:before{
+            color: $secondary;
+            position: absolute;
+           
+            
+        }
+        .review-cont{
+            display: inline!important;
+            
+            
+        }
+    }
+}

@@ -1,0 +1,155 @@
+$main-color: #52ada2;
+$primary: #addcca;
+$white: #fff;
+$black: #000;
+$secondary: rgb(124, 124, 124);
+.pt-150{
+    padding-top: 150px;
+}
+
+.main-btn{
+    background: transparent;
+    border: 3px solid #fff;
+    padding: 10px 20px;
+    color: $white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all .4s ease;
+    z-index: 1000;
+    &:hover{
+        color: $white;
+        text-decoration: none;
+        background: $main-color;
+        border: 3px solid #52ada2;
+    }
+}
+.main-head{
+    p{
+        font-size: 20px;
+        font-weight: bold;
+        color:$main-color;
+        margin: 0px;
+    }
+    h3{
+        margin: 5px 0px;
+        font-weight: bold;
+    }
+}
+.starting{
+    scroll-snap-align: start;
+    scroll-margin-top: 1em;
+}
+
+
+.starting {
+	opacity: 0;
+	position: relative;
+	
+	&.move-up {
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        transition: all 1s ease;
+        opacity: 0;
+        -moz-transform: translate3d(0px, 80px, 0px);
+        -webkit-transform: translate3d(0px, 80px, 0px);
+        -o-transform: translate(0px, 80px);
+        -ms-transform: translate(0px, 80px);
+        transform: translate3d(0px, 80px, 0px);
+    }
+    	
+	&.move-up.in-view{
+    opacity: 1;
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+    }
+    &.rotate {
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        transition: all 1s ease;
+        opacity: 0;
+        -moz-transform: rotateY(90deg);
+        -webkit-transform: rotateY(90deg);
+        -o-transform: rotateY(90deg);
+        -ms-transform: rotateY(90deg);
+        transform: rotateY(90deg);
+    }
+        
+    &.rotate.in-view{
+    opacity: 1;
+    -moz-transform: rotateY(0);
+        -webkit-transform: rotateY(0);
+        -o-transform: rotateY(0);
+        -ms-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+
+    &.scale {
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        transition: all 1s ease;
+        opacity: 0;
+        -moz-transform: scale(0);
+        -webkit-transform: scale(0);
+        -o-transform: scale(0);
+        -ms-transform: scale(0);
+        transform: scale(0);
+    }
+        
+    &.scale.in-view{
+    opacity: 1;
+    -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+
+    &.slide-left {
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        transition: all 1s ease;
+        opacity: 0;
+        -moz-transform: translateX(-50px);
+        -webkit-transform: translateX(-50px);
+        -o-transform: translateX(-50px);
+        -ms-transform: translateX(-50px);
+        transform: translateX(-50px);
+    }
+        
+    &.slide-left.in-view{
+    opacity: 1;
+    --moz-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    }
+    &.slide-right {
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        transition: all 1s ease;
+        opacity: 0;
+        -moz-transform: translateX(50px);
+        -webkit-transform: translateX(50px);
+        -o-transform: translateX(50px);
+        -ms-transform: translateX(50px);
+        transform: translateX(50px);
+    }
+        
+    &.slide-right.in-view{
+    opacity: 1;
+    --moz-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    }
+}

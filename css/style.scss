@@ -1,0 +1,53 @@
+
+@import "_variables";
+@import "_head";
+@import "_about-services";
+@import "_potfolio";
+@import "_contact-footer";
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../font-face/OpenSans-Bold.woff2') format('woff2'),
+        url('../font-face/OpenSans-Bold.woff') format('woff'),
+        url('../font-face/OpenSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../font-face/OpenSans-SemiBold.woff2') format('woff2'),
+        url('../font-face/OpenSans-SemiBold.woff') format('woff'),
+        url('../font-face/OpenSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../font-face/OpenSans-Light.woff2') format('woff2'),
+        url('../font-face/OpenSans-Light.woff') format('woff'),
+        url('../font-face/OpenSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../font-face/OpenSans-Regular.woff2') format('woff2'),
+        url('../font-face/OpenSans-Regular.woff') format('woff'),
+        url('../font-face/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+body{
+    font-family: 'Open Sans'!important;
+}

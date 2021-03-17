@@ -1,0 +1,94 @@
+
+nav{
+    .navbar-toggler{
+        outline: none;
+        width:50px;
+        height: auto;
+   
+    .navbar-toggler-icon{
+        // display: flex;
+        text-align: center;
+        .menu-line{
+            width: 100%;
+            height: 2px;
+            background: $black;
+            z-index: 1003;
+            margin: 6px 0px;
+            &:nth-last-child(1){
+                width: 50%;
+            }
+            &:nth-last-child(2){
+                width: 75%;
+            }
+        }
+        
+    }
+    &:focus{
+        outline: none;
+        .menu-line{
+            &:nth-last-child(1){
+                width: 100%;
+            }
+            &:nth-last-child(2){
+                width: 75%;
+            }
+   }
+    }
+
+    
+
+}
+    .nav-link{
+        color: $white;
+        &:hover{
+            color: $main-color;
+        }
+    }
+}
+
+.hero-bg{
+    inset: 0px;
+    background-attachment: fixed;
+    position: relative;
+    video{
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transform-origin: top left;
+        transform: skewY(-5deg);
+    }
+    .herobg-info{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background: rgba(0, 0, 0, 0.678);
+        padding: 20px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
+        h2{
+            font-size: 40px
+        }
+        .main-btn{
+            // position: absolute;
+            // left: 50%;
+            // top: 0;
+            transform: translateX(-50%);
+            margin-top: 20px!important;
+        }
+    }
+}
+
+.add-nav{
+    background: rgba(167, 167, 167, 0.712);
+}
+
+@media only screen and (max-width: 768px){
+    .hero-bg{
+        overflow: hidden;
+        video{
+            width: auto;
+            height: 90vh;
+        }
+    }
+}

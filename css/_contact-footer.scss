@@ -1,0 +1,38 @@
+.contact{
+    
+    .contact-info{
+        margin-top: 50px;
+        span{
+            color: $secondary;
+        }
+        p{
+            color: $main-color;
+            i{
+                padding-right: 5px;
+            }
+        }
+    }
+}
+.footer{
+    padding: 50px 0px;
+    margin-top: 150px;
+    background: $main-color;
+    h4{
+        margin-bottom: 20px;
+    }
+    .foot-link{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        
+    
+        .footer-link{
+            color: $white;
+            margin: 20px 20px!important;
+           
+            
+        }
+        
+    }
+    
+}
